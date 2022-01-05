@@ -8,5 +8,5 @@ RUN mvn package
 FROM openjdk:11
 WORKDIR /app
 COPY --from="BUILD" . ./app.jar
-EXPOSE 8080
+EXPOSE 4200
 CMD ["java", "-jar", "app.jar"]
