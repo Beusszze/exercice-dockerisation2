@@ -1,0 +1,8 @@
+name: exercice github-action
+on: [push]
+jobs: 
+  execution-deux-echo:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "Je fais les tests"
+      - run: echo "Je fais le build"
