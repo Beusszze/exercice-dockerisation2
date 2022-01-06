@@ -1,5 +1,7 @@
 name: exercice github-action
 on: [push]
+  branches:
+    - develop
 jobs: 
   execution-deux-echo:
     runs-on: ubuntu-latest
